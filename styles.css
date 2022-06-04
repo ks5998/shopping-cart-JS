@@ -16,6 +16,13 @@ a {
     text-decoration: none;
     color: #fff ;
 }
+footer {
+    background: #023047;
+}
+.foot {
+    text-align: center;
+    color: #bbb;
+}
 .navbar {
     background-color: #023047;
     color: #fff;
@@ -32,14 +39,22 @@ a {
     color: #fff;
     font-size: 2rem;
     padding: .3rem;
+    border: 2px solid white;
+}
+.cart:hover {
+    background: green;
+    transform: scale(1.1);
+    filter: brightness(150%);
 }
 .cartAmount {
-    font-size: 1.3rem;
-    /* background-color: red; */
-    color: red;
+    font-size: 1rem;
+    background-color: red;
+    color: white;
     position: absolute;
     top: -0.2rem;
     right: 0;
+   
+    
 }
 
 /*-------------------shop item styles----------------------------------------*/
@@ -50,6 +65,7 @@ a {
     gap: 1.9rem;
     justify-content: center;
     margin-bottom: 1.25rem;
+    
 }
 @media (max-width: 1000px) {
     .shop {
@@ -64,10 +80,18 @@ a {
 .item {
     border: 0.1rem solid #023047;
     border-radius: 0.3rem;
+    box-shadow: 1px 1px 7px;
+    
+}
+.item:hover img{
+    border-radius: 10px;
+    transform: scale(1.5);
+   
 }
 .item img {
     width: 100%;
     border-radius: 2px 2px 0 0;
+    transition: 0.2s;
 }
 .details {
     display: flex;
